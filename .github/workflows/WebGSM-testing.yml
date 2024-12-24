@@ -24,7 +24,7 @@ jobs:
 
       - name: Install WebGSM
         run: |
-          wget -O WebGSM-Installer.sh https://raw.githubusercontent.com/LoadingStill/WebGSM/latest/WebGSM-Docker-Installer.sh
+          wget -O WebGSM-Docker-Installer.sh https://raw.githubusercontent.com/LoadingStill/WebGSM/refs/heads/latest/WebGSM-Docker-Install.sh
           chmod +x WebGSM-Docker-Installer.sh
 
       - name: Run WebGSM
