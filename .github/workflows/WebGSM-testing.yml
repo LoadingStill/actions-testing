@@ -1,4 +1,4 @@
-name: Debian 12 Hello World
+name: WebGSM Docker Debian 11
 
 on:
   push:
@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  hello-world:
+  Set_Up:
     runs-on: ubuntu-latest # Required by GitHub Actions, will use Debian container.
 
     container: # Use a Debian 11 container.
@@ -24,9 +24,9 @@ jobs:
 
       - name: Install WebGSM
         run: |
-          wget -O WebGSM-Installer.sh https://raw.githubusercontent.com/LoadingStill/WebGSM/latest/WebGSM-Installer.sh
-          chmod +x WebGSM-Installer.sh
+          wget -O WebGSM-Installer.sh https://raw.githubusercontent.com/LoadingStill/WebGSM/latest/WebGSM-Docker-Installer.sh
+          chmod +x WebGSM-Docker-Installer.sh
 
       - name: Run WebGSM
         run: |
-          ./WebGSM-Installer.sh
+          ./WebGSM-Docker-Installer.sh
