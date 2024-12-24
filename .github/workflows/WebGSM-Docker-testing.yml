@@ -16,7 +16,7 @@ jobs:
       image: debian:11
 
     steps:
-      - name: Set up Debian 11
+      - name: Set up Debian 11 
         run: |
           apt-get update
           apt-get install -y wget zip unzip # wget used in WebGSM
