@@ -19,7 +19,7 @@ jobs:
       - name: Set up Debian 11
         run: |
           apt update
-          apt install -y curl # Example of installing a package
+          apt install -y wget # wget used in WebGSM
           echo "Debian 11 setup complete."
 
       - name: Install WebGSM
